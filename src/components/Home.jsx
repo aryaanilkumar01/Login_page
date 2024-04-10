@@ -70,8 +70,8 @@ const handleRegister =(e)=>{
              label="username"
              className="mb-3 mt-3"
            >
-             <Form.Control type="username" placeholder="Enter your name" onChange={e=> setUserData
-              ({...userData, username: e.target.value})} value={userDetails.username} />
+             <Form.Control type="username" placeholder="Enter your name" onChange={e=> setUserDetails
+              ({...userDetails, username: e.target.value})} value={userDetails.username} />
            </FloatingLabel>
              )}
 
@@ -81,13 +81,13 @@ const handleRegister =(e)=>{
         label="Email address"
         className="mb-3 mt-3"
       >
-        <Form.Control type="email" placeholder="name@example.com" onChange={e=> setUserData
-              ({...userData, email: e.target.value})} value={userDetails.email} />
+        <Form.Control type="email" placeholder="Enter your email" onChange={e=> setUserDetails
+              ({...userDetails, email: e.target.value})} value={userDetails.email} />
       </FloatingLabel>
       
       <FloatingLabel controlId="floatingPassword" label="Password">
-        <Form.Control type="password" placeholder="Password" onChange={e=> setUserData
-              ({...userData, password: e.target.value})} value={userDetails.password} />
+        <Form.Control type="password" placeholder="Password" onChange={e=> setUserDetails
+              ({...userDetails, password: e.target.value})} value={userDetails.password} />
       </FloatingLabel>
            {insideRegister?
            <div>
