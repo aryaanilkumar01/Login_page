@@ -122,6 +122,13 @@ const handleRegister =()=>{
                console.log('Login Failed');
           }}/>
             </div>
+            <div className='text-center mt-2'>
+                        {insideRegister ?
+                            <p>Already have an accout? <Link to={'/'} >Sign In</Link></p> :
+
+                            <p>Don't have an account? <Link to={'/signup'} >Sign Up</Link></p>
+                        }
+                    </div>
 
 
             
@@ -138,6 +145,8 @@ const handleRegister =()=>{
                 Or
               </p>  */}
               </div>
+             
+
           </div>
        </div>
        <ToastContainer position="top-center" theme="colored" autoClose={3000} />
