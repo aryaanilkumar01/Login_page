@@ -15,7 +15,8 @@ function Home({insideRegister}) {
   })
   const navigate=useNavigate()
 
-  const handleLogin =()=>{
+  const handleLogin =(e)=>{
+    e.preventDefault()
     const {username,password}=userDetails
     if(username&&password){
         navigate('/dashboard')
@@ -25,7 +26,8 @@ function Home({insideRegister}) {
     }
 }
 
-const handleRegister =()=>{
+const handleRegister =(e)=>{
+  e.preventDefault()
   const {username,password,email}=userDetails
   if(username&&password&&email){
       navigate('/')
@@ -123,16 +125,15 @@ const handleRegister =()=>{
           }}/>
             </div>
             <div className='text-center mt-2'>
-                        {insideRegister ?
-                            <p>Already have an accout? <Link to={'/'} >Sign In</Link></p> :
+                       
 
-                            <p>Don't have an account? <Link to={'/signup'} >Sign Up</Link></p>
-                        }
+                            <p>Don't have an account? <Link to={'/register'} >Sign Up</Link></p>
+                        
                     </div>
 
 
             
-            <p className='mt-3 '>New? Click here to <Link to={'/register'} className='text-primary'>Register</Link></p>
+            
             </div>
 
 

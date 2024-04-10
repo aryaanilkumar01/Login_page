@@ -29,7 +29,7 @@ function Dashboard() {
     
    <div className='log d-flex flex-column justify-content-center align-items-center' style={{height:"100vh"}}>
    <div className='d-flex align-items-center'>
-          <h1 className='me-2 mb-0'>Hii.... {data.name.toUpperCase()}</h1>
+          <h1 className='me-2 mb-0'>Welcome,... {data.name.toUpperCase()}</h1>
         </div>
       <img className='img-fluid me-5 ms-5 ps-5 mt-5 mb-4 ' style={{width:'90%',height:'500px',
       textAlign:'center',alignItems:'center',marginLeft:'100px'}} src={welcomeimg} alt="" />
